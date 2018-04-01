@@ -299,7 +299,7 @@ Every time a user accesses an EDGAR document, that request should be counted eve
 ### How do you know when a session is over?  
 As shown in the above example, the session is over when the end of the file is reached or after a period of inactivity has elapsed with no requests from that user. For example, if the inactivity period is 2 seconds, and the session start is 00:00:01 and there are no further requests from that user by 00:00:04, then the session is considered over at 00:00:01.  
 
-### Where can I get obtain the input file, `log.csv`?
+### Where can I get the input file, `log.csv`?
 We've provided one example as shown above in this README for you to better understand the challenge but you should create your own data to test your program. You can obtain other data [directly from the SEC](https://www.sec.gov/dera/data/edgar-log-file-data-set.html) but be aware that the weblog files are quite large and you also may have problems decompressing the archive file. `Unzip` may not work on the EDGAR zip file, and you may have to use open source software such as `7zip`. If you are unable to decompress the zip file, revert to creating your own data for the challenge. Do not spend too long on trying to decompress the archive file.
 
 ### May I use R, Matlab, or other analytics programming languages to solve the challenge?
